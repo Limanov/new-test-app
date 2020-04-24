@@ -1,6 +1,5 @@
-import React, { Component, Fragment } from "react";
-
-import Select from "react-select";
+import React, { Component, Fragment, ComponentType} from "react";
+import Select, {components} from "react-select";
 
 export const colourOptions = [
   { value: "ocean", label: "Ocean", color: "#00B8D9", isFixed: true },
@@ -22,7 +21,15 @@ type State = {
   isRtl: boolean;
   isSearchable: boolean;
 };
-
+const DropdownIndicator = (
+    props:  any
+  ) => {
+    return (
+      <components.DropdownIndicator {...props}>
+        ttrrr
+      </components.DropdownIndicator>
+    );
+  };
 const Combobox: React.FC<Props> = ({}: Props) => {
   return (
     <Fragment>
@@ -32,6 +39,7 @@ const Combobox: React.FC<Props> = ({}: Props) => {
         defaultValue={colourOptions[0]}
         name="color"
         options={colourOptions}
+        components={{DropdownIndicator}}
       />
     </Fragment>
   );
