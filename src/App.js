@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
-import Combobox from './Select';
-import Kafelek from './Kafelek';
+import Combobox from './Components/Select';
+import Kafelek from './Components/Kafelek';
+import MenuList from './Components/MenuList';
 class App extends Component {
   render() {
     return (
@@ -9,7 +10,7 @@ class App extends Component {
      <div className="App">
       {/* <Combobox /> */}
       <Kafelek text="test"/>
-
+        <MenuList/>
 
       </div>
       </>

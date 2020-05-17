@@ -1,11 +1,11 @@
 import React, { Component, Fragment, ComponentType} from "react";
-import logo from './logo.svg';
+import logo from './Img/logo.svg';
 import './Kafelek.css';
 type Props = {
 text:string;
 };
 
-const Kafelek: React.FC<Props> = ({text}: Props) => {
+const Menu: React.FC<Props> = ({text}: Props) => {
   return (
     <>
       <div className="container">
@@ -30,4 +30,4 @@ const Kafelek: React.FC<Props> = ({text}: Props) => {
     </>
   );
 };
-export default Kafelek;
+export default Menu;

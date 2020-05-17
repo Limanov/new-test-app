@@ -10,8 +10,7 @@
     background-color: tan;
 }
 img{
-    width:50%;
-    height: 50%; 
+
 }
 hr{
     border:1px solid red;
@@ -19,15 +18,17 @@ hr{
 .flexHeader{
     display: flex;
     flex-direction: row;
+    
     align-items: flex-end;
 
 }
 .image{
-background-color: lightgreen;
+background-color: lightgreen;    width:50%;
+    height: 50%; 
 }
 
 .text{
-    text-align: right;
+    text-align: end;
     width:50%;
     height: 50%;
     background-color: steelblue;
