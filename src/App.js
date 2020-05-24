@@ -7,10 +7,11 @@ class App extends Component {
   render() {
     return (
       <>
+     <MenuList/>
      <div className="App">
       {/* <Combobox /> */}
       <Kafelek text="test"/>
-        <MenuList/>
+
 
       </div>
       </>

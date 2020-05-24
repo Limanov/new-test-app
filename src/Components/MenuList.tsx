@@ -1,5 +1,6 @@
 import React, { Component, Fragment, ComponentType } from "react";
 import logo from './../Img/logo.svg';
+import  './MenuList.css';
 import { LinkList } from './../Model/LinkList';
 import { multiValueLabelCSS } from "react-select/src/components/MultiValue";
 // import './leftMenu.css';
@@ -14,20 +15,8 @@ var testLinkArray =
 const MenuList: React.FC<Props> = ({ text }: Props) => {
   return (
     <>
-      <div className="leftMenu">
-        <div className="flexMenu">
-          {testLinkArray.map(element => <div><a href={element.name}>{element.label}</a></div>)}
-          <div className="image"><img src={logo} /></div>
-          <div className="text">{text}</div>
-        </div>
-        <div>
-          <div className="content">
-            <hr />
-             tekst<br />
-            <hr />
-          </div>
-          <input />
-        </div>
+      <div className="menu__flex">
+        {testLinkArray.map(element => <div className="menu__item"><a href={element.name}>{element.label}</a></div>)}
       </div>
     </>
   );
